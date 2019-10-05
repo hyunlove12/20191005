@@ -1,0 +1,111 @@
+*******************************
+https://www.kaggle.com/c/titanic/data
+
+https://www.data.go.kr/issues/1/show.do?priority=MINOR
+
+# pip install wordcloud
+# pip install gensim
+# conda install -c conda-forge jpype1
+# pip install konlpy
+# pip install selenium
+*******************************
+
+Process
+-
+
+Mining
+-bs
+-chromDriver
+-selenium
+->web scraping(web - crawling) -> 비정형
+->text mining(*.txt)  -> 비정형
+->data mining(database) -> 정형(정규화 과정을 거쳐서 정형화 된 상태)
+
+Pre-Processing
+-데이터 편집
+-pandas, numpy
+-자연어 처리(NL)
+->데이터를 모델링 하는 과정 -> 가장 중요한 로직(데이터 분석, 정확도를 높여야 한다)
+->konlpy(파이썬 한국어 자연어 분석)
+
+
+Modeling
+-TensorFlow
+-keras
+-algorithm
+
+Learning
+-sk-learn
+-mglearn
+
+Test
+-
+
+Apply
+-
+
+
+*git설치 시 특정공간에 리눅스 공간을 만들어 준다.
+*aws -> noSql
+*noSql -> 데이터 변환이 없어서 속도가 빠르다
+*jpa, noSql
+*xml보다 json사용(xml은 무섭다. xml 공인인증서 사용)
+*soap
+*텍스트 코퍼스
+*https -> public
+*ssh -> private(접근 망에 대한) -> 여러 사람이 사용하는 컴퓨터의 경우 ssh
+*firebase 기반 챗봇
+*~/ -> root 경로
+
+-ssh-keygen -t rsa -C "이메일"
+-깃허브롸 로컬의 키 벨류를 매핑
+-key / value방식
+
+git add -A = git add .
+
+*restful 방식
+https://music.bugs.co.kr/chart/track/realtime/total?chartdate=20190810&charthour=11
+http://kind.krx.co.kr/disclosureSimpleSearch.do?method=disclosureSimpleSearchMain -> restful 방식
+
+
+***************************************************
+https://git-scm.com/downloads 가서 깃설치프로그램 다운로드 후 설치
+
+*SSH key 유무확인
+ls -al ~/.ssh
+// no such file 아직 생성 전이므로 있으면 안됨
+
+*SSH key 생성
+ssh-keygen -t rsa -C "깃허브에 가입했던 그 이메일"
+비번은 깃허브 가입 시 입력한 비밀번호
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat < ~/.ssh/id_rsa.pub
+
+*SSH key 등록 페이지 위치
+*기기에 git repository 등록
+git init
+git add -A
+git config --global user.email " 깃허브에 가입한 메일"
+git config --global user.name " 깃허브에 가입한 메일에서 @ 이하를 제거한 이름만"
+
+*아래 3줄은 GitHub 새 repository 페이지에서 찾아서 입력할 것
+git commit -m "타이타닉"
+git remote add origin git@github.com:parkjungkwan/ezen33_tf.git : 해당 remote 주소를 origin으로 기억해라
+git push -u origin master : master를 origin에 업로드 해라
+
+*한번 업로드한 뒤에 다시 하는 경우
+git add -A
+git commit -m "타이타닉"
+git push -u origin master
+
+
+*****************************************************
+
+from bs4 import BeautifulSoup
+bs4파이썬 파일에서 beautifulSoup의 클래스 로드
+
+
+*******************************************
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaEiCK9L3H82IZyL5gQsiO1V5++Fy0WXbvYHr5CmHBqa/f/XgSddTHXgzZmR+TYDU4Cpvz+WbxKmUQFuSXzjiEf9XsxSLjiLKjopAT4MneMTRs+ckVOsDQJmOOHxBEBuRSZHWtyODhcajru7b+fKzuTMJSgMF2Pxp0cNV84dUcBeDYg8pKrNAkvXFtbNiNROmw3uudoJvJgLzHafYh3RmbcPEL9eIE6HmM1DHjPkSO4p9GZlMCqUQ/QmPc8ErSrErNnsXXNUkW9hI1jOpVUIQnlJ6HXCa9Fbk0FcxVCtauABw+gnnZb03MvIutdSG4z31aaxSnnfMMjNF04HT5Lhjhnj4JSj+sqNQCaBppfV+HTJXDiwWABWXOO1OC9dXeCpJ6w2slRn1jjffJanC5k1Gm6fQRAkvdc7NRZBcPdbY5cPPdlg1Bb8mmkJ/OFS14QShvUmocsNdxlvLAI5aBbAzXqBSYDbCEL+y8TEzSfZz5KHQkxRWp+uAedxeJJoeY87U= hyunlove12@naver.com
